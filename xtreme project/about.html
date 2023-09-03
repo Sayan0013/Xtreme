@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+    <header>
+        <a href="xtreme.html"><img src="logo2.png"></a>
+        <div class="menu"  id="menu">
+            <div class="btn">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+            </div>
+
+                <a href="#">HOME</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">COACHES</a>
+                <a href="#">MEMBERSHIPS</a>
+                <a href="#">CONTACT US</a>
+                
+            </div>
+            <div class="btn">
+                <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+            </div>
+    
+        </header>
+
+        <h1>About Us...</h1>
+    </section>
+
+
+    <!----------about us content------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-coln">
+                <h2>We are the city's best gym...</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum eaque delectus harum officia. Aliquid facere harum expedita consectetur minima numquam voluptates totam sapiente reprehenderit! Vel, optio! Tempora eveniet et alias cupiditate quasi, tenetur beatae quo minus, accusamus veniam hic nostrum id, iure consequatur. Enim, nisi minus magnam dolorem corporis dolor, aspernatur fugit quibusdam quaerat dolore assumenda animi dignissimos fuga officia!</p>
+                
+                <a href="" class="red-btn button">EXPLORE NOW</a>
+            
+            </div>
+            <div class="about-coln">
+                <img src="wb23.jpg">
+            </div>
+        </div>
+
+    </section>
+    
+
+    <!----------Footer----------->
+
+    <section class="footer">
+        <h4>Also Follow us on</h4>
+        <div class="icon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+
+
+        </div>
+        <p>Made with 🧡 by Sayan...</p>
+    </section>
+
+
+
+
+
+
+
+       <script>
+            window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle('sticky',window.scrollY > 0)
+            }); 
+
+   
+            
+       </script>
+
+       <script>
+           var menu= document.getElementById("menu");
+            function showmenu(){
+                menu.style.right = "0";
+            }
+            function hidemenu(){
+                menu.style.right = "-200px"
+            }
+       </script>
+</body>
+</html>
